@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/p2papplication" 
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@drawable/camera_background">
+	
+	<FrameLayout 
+		android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_view_finder"
+    >
+		<RelativeLayout 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true" 
+			android:layout_centerVertical="true">
+			<com.p2p.app.VideoSurfaceView
+				android:id="@+id/video"
+				android:layout_width="480px" 
+				android:layout_height="400px"
+				android:layout_margin="2px" 
+				android:background="#2000ff00"
+				android:layout_alignParentLeft="true"/>
+			<RelativeLayout
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+			>
+				<LinearLayout
+					android:id="@+id/encoder_info_panel"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:visibility="visible"
+					android:layout_alignParentTop="true"
+				>
+				<TextView 
+					android:id="@+id/encoder_info"
+					android:layout_width="wrap_content"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:textSize="15px"
+					android:textStyle="bold"
+					android:textColor="#aabbcc"
+					android:layout_marginLeft="15px"
+					android:layout_marginTop="10px"
+				/>
+			</LinearLayout>
+		</RelativeLayout>
+			<com.p2p.app.VideoSurfaceView
+				android:id="@+id/preview"
+				android:layout_width="160px" 
+				android:layout_height="100px"
+				android:background="#20ff0000" 
+				android:layout_margin="2px" 
+				android:layout_toRightOf="@+id/video" 
+				android:layout_alignBottom="@+id/video"/>
+		</RelativeLayout>
+	</FrameLayout>
+
+</LinearLayout>
+

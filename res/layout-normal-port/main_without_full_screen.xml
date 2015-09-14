@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/p2papplication" 
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	
+	<FrameLayout 
+		android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:background="@drawable/border_view_finder"    
+    >
+
+	<RelativeLayout 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_centerHorizontal="true"
+		android:orientation="vertical"
+	>
+		<RelativeLayout 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:id="@+id/relative_layout"
+		>
+			<com.p2p.app.VideoSurfaceView
+				android:id="@+id/video"
+				android:layout_width="match_parent" 
+				android:layout_height="320dip"
+				android:background="#2000ff00"
+				android:layout_centerVertical="true" 
+				android:layout_alignParentLeft="true"/>
+			<RelativeLayout
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+			>
+				<LinearLayout
+					android:id="@+id/encoder_info_panel"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:visibility="visible"
+					android:layout_alignParentTop="true"
+				>
+					<TextView 
+						android:id="@+id/encoder_info"
+						android:layout_width="wrap_content"
+						android:layout_weight="1"
+						android:layout_height="wrap_content"
+						android:textSize="15px"
+						android:textStyle="bold"
+						android:textColor="#aabbcc"
+						android:layout_marginLeft="15px"
+						android:layout_marginTop="10px"
+					/>
+				</LinearLayout>
+		</RelativeLayout>
+	
+			<com.p2p.app.VideoSurfaceView
+				android:id="@+id/preview"
+				android:layout_width="120dip" android:layout_height="105dip"
+				android:background="#20ff0000" android:layout_margin="2px" 
+				android:layout_alignBottom="@+id/video" android:layout_alignRight="@+id/video"/>
+		</RelativeLayout>
+	    <ListView 
+			android:id="@+id/settings_list" 
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_below="@+id/relative_layout" />
+
+	</RelativeLayout>
+	</FrameLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">P2PConferenceApp</string>
+<string name="port">Port</string>
+<string name="ip">IP</string>
+
+<string name="remote_ip">Remote IP</string>
+<string name="local_port">Local port</string>
+<string name="remote_port">Remote port</string>
+<string name="enable_video">Enable Video</string>
+<string name="enable_video_summary">video is played</string>
+<string name="disable_video_summary">video is not played</string>
+<string name="enable_audio">Enable Audio</string>
+<string name="enable_audio_via_css">Enable Audio via CSS</string>
+<string name="enable_audio_summary">audio is enabled</string>
+<string name="disable_audio_summary">audio is not enabled</string>
+<string name="enable_audio_via_css_summary">audio via CSS is enabled</string>
+<string name="disable_audio_via_css_summary">audio via CSS is not enabled</string>
+<string name="audio_option">Audio Option</string>
+<string name="audio_codecs">Audio Codecs</string>
+<string name="audio_channel">Audio Channel</string>
+<string name="video_option">Video Option</string>
+<string name="video_codecs">Video Codecs</string>
+<string name="enable_logging">Enable Logging</string>
+<string name="enable_logging_summary">Log is available in sdcard</string>
+<string name="disable_logging_summary">application is going to capture any log</string>
+<string name="settings_account">Account</string>
+<string name="settings">Settings</string>
+<string name="toggle">Toggle</string>
+
+<string name="pref_p2p_settings_category">P2P Setting</string>
+<string name="pref_frame_rate_title">Frame Rate</string>
+<string name="pref_resolution_title">Resolution</string>
+<string name="pref_video_quality_title">Video Quality</string>
+<string name="pref_i_generate_frame_title">I-frame test</string>
+<string name="pref_restore_title">P2P settings</string>
+<string name="pref_restore_detail">Restore defaults</string>
+<string name="enable_full_screeen">Full Screen</string>
+<string name="enable_full_screeen_summary">show video in full screen</string>
+<string name="disable_full_screeen_summary">do not show video in full screen</string>
+
+</resources>

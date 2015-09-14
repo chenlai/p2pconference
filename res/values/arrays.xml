@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (C) 2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ -->
+
+<resources>
+
+    <string-array name="pref_frame_rate_entries" translatable="false">
+        <item>15</item>
+        <item>30</item>
+    </string-array>
+    
+    <string-array name="pref_resolution_entries" translatable="false">
+        <item>720p</item>
+        <item>VGA</item>
+        <item>QVGA</item>
+        <item>QCIF</item>
+    </string-array>
+    
+    <string-array name="pref_video_quality_entries" translatable="false">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
+    
+    <string-array name="pref_i_generate_frame_entries" translatable="false">
+        <item>Generate</item>
+        <item>Degenerate</item>
+    </string-array>
+
+    <string-array name="audio_codecs_entries" translatable="false">
+        <item>G711U</item>
+        <item>G711A</item>
+        <item>G722</item>
+        <item>AMR NB</item>
+    </string-array>
+
+    <string-array name="audio_codecs_values" translatable="false">
+        <item>audio/pcmu</item>
+        <item>audio/pcma</item>
+        <item>audio/g722</item>
+        <item>audio/3gpp</item>
+    </string-array>
+
+    <string-array name="audio_channel_values" translatable="false">
+        <item>Mono</item>
+    </string-array>
+    
+    <string-array name="configuration_option" translatable="false">
+        <item>Resolution</item>
+        <item>Frame Rate</item>
+        <item>Video Quality</item>
+        <item>Generate I-frame</item>
+    </string-array>
+    
+  
+    <string-array name="video_codecs_entries" translatable="false">
+        <item>H264</item>
+        <item>H263</item>
+        <item>MPEG4</item>
+    </string-array>
+
+    <string-array name="video_codecs_values" translatable="false">
+    <item>video/avc</item>
+    <item>video/3gpp</item>
+    <item>video/mp4v-es</item>
+    </string-array>
+    
+    <string-array name="p2p_setting_entries" translatable="false">
+		<item>High_quality</item>
+		<item>Med_quality</item>
+		<item>Low_quality</item>
+		<item>I-frame</item>
+		<item>Statistics</item>
+    </string-array>
+</resources>

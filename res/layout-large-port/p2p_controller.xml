@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/p2p_conf_controller" 
+    android:background="#CC666666"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:gravity="center">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:paddingTop="4dip">
+		<ListView 
+			android:id="@+id/settings_list" 
+			android:layout_height="match_parent"
+			android:layout_width="wrap_content"
+			android:divider="#FFFFFF"
+			android:textSize="16sp"
+			android:dividerHeight="3dp"
+			android:textColor="#444444"
+			android:cacheColorHint="#00000000"
+		>
+		</ListView>
+	</LinearLayout>
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="#FF0000FF" />
+	<LinearLayout
+		android:id="@+id/p2p_conf_setting" 
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+        <include layout="@layout/p2p_control"/>
+    </LinearLayout>
+    
+</LinearLayout>
+	

@@ -1,0 +1,99 @@
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+			<EditTextPreference
+				android:key="remote_ip"
+				android:title="@string/remote_ip"
+				android:singleLine="true"
+				android:phoneNumber="true"
+				android:defaultValue="127.0.0.1" />
+			<EditTextPreference
+				android:key="local_port"
+				android:title="@string/local_port"
+				android:singleLine="true"
+				android:phoneNumber="true"
+				android:defaultValue="5000" />
+			<EditTextPreference
+				android:key="remote_port"
+				android:title="@string/remote_port"
+				android:singleLine="true"
+				android:phoneNumber="true"
+				android:defaultValue="5000" />
+			<CheckBoxPreference
+				android:key="enable_video"
+				android:title="@string/enable_video"
+				android:summaryOn="@string/enable_video_summary"
+				android:summaryOff="@string/disable_video_summary"
+				android:defaultValue="true" />
+			<CheckBoxPreference
+				android:key="enable_audio"
+				android:title="@string/enable_audio"
+				android:summaryOn="@string/enable_audio_summary"
+				android:summaryOff="@string/disable_audio_summary"
+				android:defaultValue="true" />
+			<CheckBoxPreference
+				android:key="enable_audio_via_css"
+				android:title="@string/enable_audio_via_css"
+				android:summaryOn="@string/enable_audio_via_css_summary"
+				android:summaryOff="@string/disable_audio_via_css_summary"
+				android:defaultValue="false" />
+			<CheckBoxPreference
+				android:key="enable_logging"
+				android:title="@string/enable_logging"
+				android:summaryOn="@string/enable_logging_summary"
+				android:summaryOff="@string/disable_logging_summary"
+                android:enabled="false"
+				android:defaultValue="false" />
+			<CheckBoxPreference
+				android:key="enable_full_screen"
+				android:title="@string/enable_full_screeen"
+				android:summaryOn="@string/enable_full_screeen_summary"
+				android:summaryOff="@string/disable_full_screeen_summary"
+				android:defaultValue="false" />
+			<PreferenceCategory 
+				android:title="@string/video_option"
+				android:key="video_option_title">
+				<ListPreference
+					android:key="video_resolution"
+					android:title="@string/pref_resolution_title"					
+					android:entries="@array/pref_resolution_entries"
+					android:entryValues="@array/pref_resolution_entries"
+					android:dialogTitle="@string/pref_resolution_title"
+					android:defaultValue="QVGA" />
+				<ListPreference
+					android:key="video_fps"
+					android:title="@string/pref_frame_rate_title"					
+					android:entries="@array/pref_frame_rate_entries"
+					android:entryValues="@array/pref_frame_rate_entries"
+					android:dialogTitle="@string/pref_frame_rate_title"
+					android:defaultValue="30" />
+				<ListPreference
+					android:key="video_codecs" android:enabled="false"
+					android:title="@string/video_codecs"
+					android:entries="@array/video_codecs_entries"
+					android:entryValues="@array/video_codecs_values"
+					android:dialogTitle="@string/video_codecs"
+					android:defaultValue="H264" />
+			</PreferenceCategory>
+			
+			<PreferenceCategory 
+				android:title="@string/audio_option"
+				android:key="audio_option_title">
+				<ListPreference
+					android:key="audio_codecs"
+					android:title="@string/audio_codecs"
+					android:entries="@array/audio_codecs_entries"
+					android:entryValues="@array/audio_codecs_values"
+					android:dialogTitle="@string/audio_codecs"
+					android:defaultValue="AMR NB"/>
+				<!--
+				<ListPreference
+					android:key="audio_channel"
+					android:title="@string/audio_channel"
+					android:entries="@array/audio_channel_values"
+					android:entryValues="@array/audio_channel_values"
+					android:dialogTitle="@string/audio_channel"
+					android:defaultValue="Mono" />
+				-->
+			</PreferenceCategory>
+
+</PreferenceScreen>
